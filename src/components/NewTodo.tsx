@@ -1,4 +1,5 @@
 import React, {useRef} from 'react';
+import { Button, Form } from 'semantic-ui-react';
 
 interface NewTodoProps{
     onAddTodo: (text: string) => void;
@@ -13,13 +14,13 @@ const NewTodo: React.FC<NewTodoProps> = props => {
     }
 
     return (
-        <form onSubmit={submitHandler}>
-            <div>
+        <Form onSubmit={submitHandler}>
+            <Form.Field>
                 <label>Título</label>
                 <input type="text" id="todo-text" ref={inputRef}/>
-            </div>
-            <button type="submit">Enviar</button>
-        </form>
+            </Form.Field>
+            <Button type="submit">Enviar</Button>
+        </Form>
     )
 }
 

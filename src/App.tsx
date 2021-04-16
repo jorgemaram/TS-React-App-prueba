@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import TodoList from './components/TodoList';
 import NewTodo from './components/NewTodo';
 import { Todo } from './models/Todo';
+import 'semantic-ui-css/semantic.min.css';
 
 const App: React.FC = () => {
 
